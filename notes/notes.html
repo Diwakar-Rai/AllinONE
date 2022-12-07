@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All In One</title>
+    <link rel="stylesheet" href="../indexResources/indexStyle.css" />
+    <link rel="stylesheet" href="./notes.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">All In One</div>
+      <nav>
+        <ul class="navList">
+          <li class="navItem"><a href="../index.html">Home</a></li>
+          <li class="navItem"><a href="../movies/movies.html">Movies</a></li>
+          <li class="navItem"><a href="../news/news.html">News</a></li>
+          <li class="navItem"><a href="/">Notes</a></li>
+          <li class="navItem"><a href="../toDo/toDo.html">To Do</a></li>
+          <li class="navItem"><a href="../weather/weather.html">Weather</a></li>
+        </ul>
+      </nav>
+      <div class="time">00:00:00</div>
+      <div class="hamburger">
+        <span class="slit"></span>
+        <span class="slit"></span>
+        <span class="slit"></span>
+      </div>
+    </header>
+    <main>
+      <div class="noteTitle">
+        <h1>Notes App</h1>
+        <button id="noteBtn">Add Note</button>
+      </div>
+      <div class="noteInputSeg dis">
+        <div class="enterTitle">
+          <input type="text" id="titleInput" placeholder="Click to enter title" />
+        </div>
+        <div class="enterNote">
+          <textarea name="note" id="noteInput" placeholder="Enter Your Note Here..."></textarea>
+        </div>
+        <div class="save">
+          <button class="saveBtn">Save Note</button>
+        </div>
+      </div>
+      <div class="noteSegment">
+        <!-- <div class="noteDiv">
+          <div class="title">
+            <input type="text" id="titleInput" placeholder="Click to enter title" />
+          </div>
+          <div class="note"><input type="text" name="note" id="noteInput" placeholder="Enter Your Note Here..."></div>
+          <div class="modify">
+            <i class="fa-solid fa-floppy-disk"></i>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>         -->
+      </div>
+    </main>
+    <footer>
+      <div class="upper">
+        <ul>
+          <li class="navItem"><a href="../index.html">Home</a></li>
+          <li class="navItem"><a href="../movies/movies.html">Movies</a></li>
+          <li class="navItem"><a href="../news/news.html">News</a></li>
+          <li class="navItem"><a href="/">Notes</a></li>
+          <li class="navItem"><a href="../toDo/toDo.html">To Do</a></li>
+          <li class="navItem"><a href="../weather/weather.html">Weather</a></li>
+        </ul>
+      </div>
+      <div class="lower">Property of Diwakar Kumar Rai.</div>
+    </footer>
+    <script src="./notes.js"></script>
+    <script src="https://kit.fontawesome.com/db796d07f9.js" crossorigin="anonymous"></script>
+  </body>
+</html>

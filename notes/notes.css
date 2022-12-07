@@ -1,0 +1,123 @@
+main{
+    background: url("./notes-background.jpg") center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 2em 4em;
+}
+
+.noteTitle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+    border-bottom: 1px solid lightgray;
+}
+
+#noteBtn, .saveBtn{
+    padding: 0.5em;
+    background-color: #474e68 ;
+    color: white;
+    width: 8em;
+    border-radius: 0.25em;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px #474e689f;
+}
+
+.noteInputSeg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fffbeb7c;
+    margin: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dis{
+    display:none;
+    transition: 2s;
+}
+
+.noteSegment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2em 3em;
+}
+
+.noteDiv{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    /* border: 1px solid gray; */
+    margin: 2em;
+    padding: 0 1em;
+    box-shadow: 1px 1px 5px #474e689f;
+}
+
+.title{
+    padding: 1em 0;
+    max-width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.enterTitle, .enterNote{
+    width: 80%;
+}
+
+#titleInput{
+    width: 95%;
+    height: 3em;
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px #474e689f;
+}
+
+.note{
+    padding: 1em 0;
+    width: 100%;
+    max-height: 85%;
+    border-bottom: 1px solid lightgrey;
+    overflow: hidden;
+}
+
+#noteInput{
+    text-align: center;
+    width: 95%;
+    height: 5em;
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #474e689f;
+
+}
+
+.modify{
+    padding: 1em;
+    display: flex;
+    justify-content: end;
+}
+
+i{
+    margin: 0 0.25em;
+    color: #474e68da;
+}
+
+
+

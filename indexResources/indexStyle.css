@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #404258;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+.logo {
+  padding: 0 2em;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navItem {
+  list-style: none;
+  padding: 0 2em;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: white;
+}
+.time {
+  padding: 0 2em;
+}
+
+.hamburger {
+  border: 1px solid white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 2px 1px;
+  display: none;
+}
+
+.slit {
+  width: 80%;
+  height: 2px;
+  background-color: white;
+}
+main {
+  background: url("./images/mountain.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.desc {
+  text-align: center;
+  width: 70%;
+  font-size: 40px;
+  line-height: 1em;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 2px lightblue;
+}
+
+.desc span {
+  color: #fbeb3d;
+}
+
+.dot {
+  font-size: 80px;
+}
+footer {
+  background-color: #474e68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer ul {
+  display: flex;
+}

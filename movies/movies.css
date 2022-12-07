@@ -1,0 +1,75 @@
+main{
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(./white_pattern.jpg) center repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* .overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+} */
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    z-index: 1;
+}
+
+#searchBox{
+    width: 50%;
+    margin: 1em auto;
+    padding: 1.5em;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px #404258;
+    outline: none;
+}
+
+.movieDiv{
+    justify-content: space-around;
+    margin: 1em;
+    padding: 1em;
+}
+
+.movieDiv::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    margin: 1em;
+    box-shadow: 5px 5px 5px #404258;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+}
+
+.cardlay{
+    background-color: rgba(0, 0, 0, 0.217);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardButton{
+    background-color: #4d517e;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
