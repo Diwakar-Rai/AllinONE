@@ -12,7 +12,7 @@ const movie = document.querySelector(".movieDiv");
 const getMovies = async (api) => {
   const response = await fetch(api);
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
   showMovies(data.results);
 };
 
@@ -22,33 +22,23 @@ const showMovies = (data) => {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-    <img src="${IMGPATH + item.poster_path}"/>
+    <div class="image">
+    <img src="${item.poster_path===null?"./imageNotFound.jpg":IMGPATH + item.poster_path}"/>
+    <p class="desc">${item.overview}</p>
+
+    </div>
+    <div class="detail">
+      <div class="movieName">
+      ${item.original_title}
+      </div>
+      <div class="rating">
+      ${item.vote_average}
+      </div>
+      </div>
   `;
 
     movie.appendChild(card);
 
-    card.addEventListener("mouseenter", function () {
-      const card = document.querySelector(".card");
-      const cardDetails = document.createElement("div");
-      const cardlay = document.createElement("div");
-      cardDetails.appendChild(cardlay);
-      cardlay.classList.add("cardlay");
-      cardlay.innerHTML = `
-    <button class="cardButton">Show Details</button>
-  `;
-      card.appendChild(cardDetails);
-
-      const cardButton = document.querySelector('.cardButton')
-      cardButton.addEventListener('click',function(){
-        console.log("clicked")
-      })
-    });
-
-    card.addEventListener("mouseleave", function(){
-      card.innerHTML = `
-    <img src="${IMGPATH + item.poster_path}"/>
-  `;
-    });
   });
 };
 

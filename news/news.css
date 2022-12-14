@@ -83,3 +83,41 @@ main{
 .anchor{
     margin-top: 1em;
 }
+
+@media screen and (max-width: 700px){
+    main{
+        background-image: url("./new_bg.jpg");
+        padding: 0.5em;
+    }
+
+    .newsBox{
+        padding: 1em;
+        margin: 0;
+    }
+
+    .newsBox h1{
+        font-size: 2em;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .image, .newsDetails{
+        width: 100%;
+    }
+
+    .newsDetails{
+        padding: 0;
+    }
+
+    .title h2{
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .desc{
+        width: 100%;
+        text-align: justify;
+    }
+}

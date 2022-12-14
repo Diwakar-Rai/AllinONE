@@ -6,14 +6,15 @@
 
 header {
   width: 100%;
-  background-color: #404258;
+  background-color: #181D31;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  font-size: 20px;
+  padding: 1em;
+  font-size: 1.2em;
   color: white;
 }
+
 .logo {
   padding: 0 2em;
 }
@@ -32,7 +33,8 @@ header {
   text-decoration: none;
   color: white;
 }
-.time {
+
+#time {
   padding: 0 2em;
 }
 
@@ -46,7 +48,7 @@ header {
   align-items: center;
   flex-direction: column;
   padding: 2px 1px;
-  display: none;
+  visibility: hidden;
 }
 
 .slit {
@@ -54,6 +56,7 @@ header {
   height: 2px;
   background-color: white;
 }
+
 main {
   background: url("./images/mountain.jpg") center center no-repeat;
   background-size: cover;
@@ -92,8 +95,10 @@ main {
 .dot {
   font-size: 80px;
 }
+
 footer {
-  background-color: #474e68;
+  padding: 2em;
+  background-color: #181D31;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,4 +107,71 @@ footer {
 
 footer ul {
   display: flex;
+}
+
+.upper {
+  margin: 1em 1em 2em;
+}
+
+.lower {
+  color: lightgrey;
+}
+
+
+@media screen and (max-width: 700px) {
+  main {
+    background-image: url("./images/peak.jpg");
+  }
+
+  header {
+    position: relative;
+    font-size: 1em;
+
+  }
+
+  nav {
+    width: 100%;
+    padding: 1em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #181D31;
+    display: none;
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navItem:last-child {
+    border-bottom: none;
+  }
+
+  .navItem:first-child {
+    border-top: 1px solid lightgrey;
+  }
+
+  .navItem {
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  #time{
+    visibility: hidden;
+  }
+
+  .hamburger{
+    visibility: visible;
+  }
+
+  .vis{
+    display: block;
+  }
+
+  footer .upper{
+    display: none;
+  }
 }

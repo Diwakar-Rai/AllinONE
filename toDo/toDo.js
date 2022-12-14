@@ -1,10 +1,13 @@
 showTodo();
 let addBtn = document.querySelector("#addBtn");
 
+let date = new Date();
+
+let dateD = document.querySelector(".dateD");
+dateD.innerHTML= date.toDateString();
 addBtn.addEventListener("click", function () {
-  console.log("clicked");
   let input = document.querySelector("#todoInput");
-  let todo = localStorage.getItem("todo");
+  let todo = localStorage.getItem('todo');
 
   if (todo == null) {
     dataTodo = [];
@@ -25,20 +28,20 @@ addBtn.addEventListener("click", function () {
 function showTodo() {
   let section3 = document.querySelector(".section3");
 
-  let todo = localStorage.getItem("todo");
+  let todo = localStorage.getItem('todo');
   if (todo == null) {
     dataTodo = [];
   } else {
     dataTodo = JSON.parse(todo);
   }
 
+  let time = new Date();
   let html = "";
   dataTodo.forEach((ele, index) => {
     html += `
         <div class="task">
-        <div class="date">date</div>
+        <div class="date">${time.toLocaleTimeString()}</div>
         <div class="work">${ele.list}</div>
-        <div class="done"><i class="right fa-solid fa-check"></i></div>
         <div class="delete"><i class="cancel fa-solid fa-xmark" id=${index} onclick="deleteTodo(this.id)"></i></div>
       </div>
         `;
@@ -55,6 +58,7 @@ function deleteTodo(index) {
   }
 
   dataTodo.splice(index, 1);
-  localStorage.setItem("todo", JSON.stringify(todo));
+  localStorage.setItem("todo", JSON.stringify(dataTodo));
   showTodo();
 }
+

@@ -67,7 +67,7 @@ main{
     border-bottom-right-radius: 5px;
     border: none;
     outline: none;
-    background-color: #474e68;
+    background-color: #181D31;
     color: white;
 }
 
@@ -90,11 +90,6 @@ i{
     font-size: 2em;
 }
 
-.right{
-    color: green;
-    text-shadow: 1px 1px 3px lightgreen;
-}
-
 .cancel{
     color: red;
     text-shadow: 1px 1px 3px orange;
@@ -105,10 +100,77 @@ i{
 }
 
 .work{
-    width: 72%;
+    width: 78%;
 }
 
-.done, .delete{
+.delete{
     width: 6%;
 }
+
+
+@media screen and (max-width:700px) {
+    main{
+        padding: 1em;
+    }
+
+    .todoSeg{
+        padding: 0;
+    }
+    
+    .section1{
+        padding: 0.5em;
+        justify-content: space-between;
+    }
+
+    .section1 h1{
+        font-size: 1.5em;
+    }
+
+    .section1 h3{
+        font-size: 1em;
+    }
+
+    .section1 .date{
+        width: auto;
+    }
+
+    .section2{
+        padding: 1em 0;
+    }
+
+    #todoInput{
+        padding: 1em;
+        height: 4em;
+        width: 80%;
+    }
+
+    #addBtn{
+        height: 4em;
+        width: 20%;
+    }
+
+    .task{
+        height: 4em;
+        padding: 0.5em;
+    }
+
+    .task .date{
+        width: auto;
+        font-size: 0.75em;
+        text-align: center;
+    }
+
+    .work{
+        width: 70%;
+        margin-left: 1em;
+    }
+
+    .delete{
+        width: 10%;
+    }
+
+    i{font-size: 1em;}
+
+}
+
 

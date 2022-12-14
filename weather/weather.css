@@ -1,10 +1,10 @@
 main{
    background-image: linear-gradient(to bottom right, rgba(255, 166, 0, 0.5), rgba(0, 0, 255, 0.5));
-   display: flex;
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
    padding: 2em 5em;
+   color: white;
 }
 
 .search{
@@ -25,19 +25,149 @@ main{
 }
 
 .info{
-    background-color: black;
     display: flex;
     margin-top: 2em;
     width: 100%;
-    height:20em;
 }
 
 .today{
     width: 50%;
-    background-color: orange;
+    padding: 1em 2em;
+    border-right: 1px solid white;
+    text-align: center;
 }
 
-.rest{
+.other{
     width: 50%;
-    background-color: green;
+    padding: 1em 2em;
+}
+.rest{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border-bottom: 1px solid white;
+}
+
+.city{
+    padding: 1em;
+    border-bottom: 1px solid white;
+}
+
+.cityName{
+    font-size: 2em;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid white ;
+}
+
+.restIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restIcon div{
+    text-align: center;
+}
+
+.icon{
+    padding-bottom: 1em;
+    border-bottom: 1px solid white;
+}
+.icon img{
+    height: 10em ;
+    width: 10em;
+}
+
+.restIcon img{
+    width: 5em;
+    height: 5em;
+}
+
+.row-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+.addInfo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cityFirstDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.citySecondDiv{
+    display: flex;
+}
+
+.temp, .sun{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+i{color: white;}
+
+@media  screen and (max-width: 700px) {
+    main{
+        padding: 1em;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .today, .other{
+        width: 100%;
+        padding: 0.5em;
+    }
+    
+    .today{
+        border-right: none;
+        margin-bottom: 2em;
+    }
+
+    .city{
+        padding: 1em 0;
+    }
+
+    .row{
+        justify-content: space-evenly;
+    }
+    .addInfo{
+        flex-direction: column;
+    }
+
+    .temp, .sun{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 0.75em;
+    }
+
+    .row-right h3{
+        font-size: 1em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    .row-right{
+        width: 65%;
+    }
 }

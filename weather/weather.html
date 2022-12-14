@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All In One</title>
-    <link rel="stylesheet" href="../indexResources/indexStyle.css" />
-    <link rel="stylesheet" href="./weather.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">All In One</div>
-      <nav>
-        <ul class="navList">
-          <li class="navItem"><a href="../index.html">Home</a></li>
-          <li class="navItem"><a href="../movies/movies.html">Movies</a></li>
-          <li class="navItem"><a href="../news/news.html">News</a></li>
-          <li class="navItem"><a href="../notes/notes.html">Notes</a></li>
-          <li class="navItem"><a href="../toDo/toDo.html">To Do</a></li>
-          <li class="navItem"><a href="/">Weather</a></li>
-        </ul>
-      </nav>
-      <div class="time">00:00:00</div>
-      <div class="hamburger">
-        <span class="slit"></span>
-        <span class="slit"></span>
-        <span class="slit"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All In One</title>
+  <link rel="stylesheet" href="../indexResources/indexStyle.css" />
+  <link rel="stylesheet" href="./weather.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">All In One</div>
+    <nav>
+      <ul class="navList">
+        <li class="navItem"><a href="../index.html">Home</a></li>
+        <li class="navItem"><a href="../movies/movies.html">Movies</a></li>
+        <li class="navItem"><a href="../news/news.html">News</a></li>
+        <li class="navItem"><a href="../notes/notes.html">Notes</a></li>
+        <li class="navItem"><a href="../toDo/toDo.html">To Do</a></li>
+        <li class="navItem"><a href="/">Weather</a></li>
+      </ul>
+    </nav>
+    <div id="time">00:00:00</div>
+    <div class="hamburger">
+      <span class="slit"></span>
+      <span class="slit"></span>
+      <span class="slit"></span>
+    </div>
+  </header>
+  <main>
+    <div class="search">
+      <form action="">
+        <input type="search" id="searchCity" placeholder="Enter a city name..." autocomplete="off"/>
+      </form>
+    </div>
+    <div class="info">
+      <div class="today">
+        <!-- <div class="city">
+          <div>
+            <h3>new Delhi</h3>
+            <p>date</p>
+          </div>
+          <div>
+            <p>latitude</p>
+            <p>longitude</p>
+          </div>
+        </div>
+        <div class="icon"></div>
+        <div class="otherInfo">
+          <div>temp</div>
+          <div>max temperature</div>
+          <div>min temperature</div>
+          <div>feels like</div>
+          <div>humidity</div>
+          <div>pressure</div>
+          <div>sunrise</div>
+          <div>sunset</div>
+        </div> -->
       </div>
-    </header>
-    <main>
-      <div class="search">
-        <form action="">
-          <input
-            type="search"
-            id="searchCity"
-            placeholder="Enter a city name..."
-          />
-        </form>
+      <div class="other">
+        <h2>Next Week</h2>
+        <div class="rest">
+          <!-- <div class="row">
+          <div class="restIcon">
+            <img src="" alt="">
+            <p>icon</p>
+          </div>
+          <div class="temp">
+            <p>max</p>
+            <p>min</p>
+          </div>
+          <div class="sun">
+            <p>sunrise</p>
+            <p>sunset</p>
+          </div> -->
+        </div>
       </div>
-      <div class="info">
-        <div class="today"></div>
-        <div class="rest"></div>
-      </div>
-    </main>
-    <footer>
-      <div class="upper">
-        <ul>
-          <li class="navItem"><a href="../index.html">Home</a></li>
-          <li class="navItem"><a href="../movies/movies.html">Movies</a></li>
-          <li class="navItem"><a href="../news/news.html">News</a></li>
-          <li class="navItem"><a href="../notes/notes.html">Notes</a></li>
-          <li class="navItem"><a href="../toDo/toDo.html">To Do</a></li>
-          <li class="navItem"><a href="/">Weather</a></li>
-        </ul>
-      </div>
-      <div class="lower">Property of Diwakar Kumar Rai.</div>
-    </footer>
-    <script src="./weather.js"></script>
-  </body>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="upper">
+      <ul>
+        <li class="navItem"><a href="../index.html">Home</a></li>
+        <li class="navItem"><a href="../movies/movies.html">Movies</a></li>
+        <li class="navItem"><a href="../news/news.html">News</a></li>
+        <li class="navItem"><a href="../notes/notes.html">Notes</a></li>
+        <li class="navItem"><a href="../toDo/toDo.html">To Do</a></li>
+        <li class="navItem"><a href="/">Weather</a></li>
+      </ul>
+    </div>
+    <div class="lower">Property of Diwakar Kumar Rai.</div>
+  </footer>
+  <script src="../indexResources/clock.js"></script>
+  <script src="./weather.js"></script>
+  <script src="https://kit.fontawesome.com/db796d07f9.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

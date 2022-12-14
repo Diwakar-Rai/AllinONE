@@ -1,4 +1,4 @@
-main{
+main {
     background: url("./notes-background.jpg") center center;
     background-attachment: fixed;
     background-size: cover;
@@ -8,7 +8,7 @@ main{
     padding: 2em 4em;
 }
 
-.noteTitle{
+.noteTitle {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -16,9 +16,10 @@ main{
     border-bottom: 1px solid lightgray;
 }
 
-#noteBtn, .saveBtn{
+#noteBtn,
+.saveBtn {
     padding: 0.5em;
-    background-color: #474e68 ;
+    background-color: #181D31;
     color: white;
     width: 8em;
     border-radius: 0.25em;
@@ -27,7 +28,7 @@ main{
     box-shadow: 1px 1px 3px #474e689f;
 }
 
-.noteInputSeg{
+.noteInputSeg {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -39,12 +40,12 @@ main{
     border-radius: 10px;
 }
 
-.dis{
-    display:none;
+.dis {
+    display: none;
     transition: 2s;
 }
 
-.noteSegment{
+.noteSegment {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -52,7 +53,7 @@ main{
     padding: 2em 3em;
 }
 
-.noteDiv{
+.noteDiv {
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -65,17 +66,18 @@ main{
     box-shadow: 1px 1px 5px #474e689f;
 }
 
-.title{
+.title {
     padding: 1em 0;
     max-width: 100%;
     border-bottom: 1px solid lightgrey;
 }
 
-.enterTitle, .enterNote{
+.enterTitle,
+.enterNote {
     width: 80%;
 }
 
-#titleInput{
+#titleInput {
     width: 95%;
     height: 3em;
     padding: 1em;
@@ -87,15 +89,15 @@ main{
     box-shadow: 2px 2px 5px #474e689f;
 }
 
-.note{
+.note {
     padding: 1em 0;
     width: 100%;
-    max-height: 85%;
+    height: 85%;
     border-bottom: 1px solid lightgrey;
     overflow: hidden;
 }
 
-#noteInput{
+#noteInput {
     text-align: center;
     width: 95%;
     height: 5em;
@@ -108,16 +110,52 @@ main{
 
 }
 
-.modify{
+.modify {
     padding: 1em;
     display: flex;
     justify-content: end;
 }
 
-i{
+i {
     margin: 0 0.25em;
     color: #474e68da;
 }
 
+@media screen and (max-width: 700px) {
+    main {
+        padding: 0 0.5em;
+    }
 
+    .noteTitle {
+        padding: 1em;
+    }
 
+    .noteInputSeg {
+        padding: 0;
+    }
+
+    .enterTitle,
+    .enterNote {
+        width: 100%;
+        text-align: center;
+    }
+
+    .save {
+        width: 93%;
+        text-align: center;
+        padding-left: 0.5em;
+    }
+
+    .saveBtn {
+        width: 100%;
+    }
+
+    .noteSegment{
+        padding: 1em;
+    }
+
+    .noteDiv{
+        margin: 1em;
+        width: 100%;
+    }
+}
